@@ -1,4 +1,4 @@
-module reg_EX_MEM(
+module reg_MEM_WB(
     input         clock,
     input         reset,
     input         enable,
@@ -15,7 +15,7 @@ module reg_EX_MEM(
     output [31:0] ALUResultW,
     output [31:0] ReadDataW,
     output [4:0]  RdW,
-    output [31:0] PCPlus4W,
+    output [31:0] PCPlus4W
 );
 
 

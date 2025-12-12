@@ -10,7 +10,6 @@ module reg_ID_EX(
     input        BranchD,
     input [2:0]  ALUControlD,
     input        ALUSrcD,
-    input [1:0]  ImmSrcD,
 
     input [31:0] RD1D,
     input [31:0] RD2D,
@@ -43,7 +42,6 @@ module reg_ID_EX(
     reg        Branch;
     reg [2:0]  ALUControl;
     reg        ALUSrc;
-    reg [1:0]  ImmSrc;
     reg [31:0] RD1;
     reg [31:0] RD2;
     reg [31:0] PC;
@@ -59,7 +57,6 @@ module reg_ID_EX(
         Branch <= 0;
         ALUControl <= 0;
         ALUSrc <= 0;
-        ImmSrc <= 0;
         RD1 <= 0;
         RD2 <= 0;
         PC <= 0;
@@ -77,7 +74,6 @@ module reg_ID_EX(
             Branch <= 0;
             ALUControl <= 0;
             ALUSrc <= 0;
-            ImmSrc <= 0;
             RD1 <= 0;
             RD2 <= 0;
             PC <= 0;
@@ -92,7 +88,6 @@ module reg_ID_EX(
             Branch <= BranchD;
             ALUControl <= ALUControlD;
             ALUSrc <= ALUSrcD;
-            ImmSrc <= ImmSrcD;
             RD1 <= RD1D;
             RD2 <= RD2D;
             PC <= PCD;
@@ -110,7 +105,6 @@ module reg_ID_EX(
     assing BranchE = Branch;
     assing ALUControlE = ALUControl;
     assing ALUSrcE = ALUSrc;
-    assing ImmSrcE = ImmSrc;
     assing RD1E = RD1;
     assing RD2E = RD2;
     assing PCE = PC;
