@@ -58,11 +58,11 @@ module datapath(clk, reset,
   regfile rf (
     .clk(clk), 
     .we3(RegWrite),
-    .a1(Instr[19:15]), 
-    .a2(Instr[24:20]), 
-    .a3(Instr[11:7]),
-    .wd3(Result), 
-    .rd1(SrcA), 
+    .a1(Instr[19:15]), //rs1
+    .a2(Instr[24:20]), //rs2
+    .a3(Instr[11:7]),  //rd
+    .wd3(Result),      //write data
+    .rd1(SrcA),       
     .rd2(WriteData)
   );
 
