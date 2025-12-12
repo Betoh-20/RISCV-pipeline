@@ -15,7 +15,7 @@ module reg_ID_EX(
     input [31:0] RD1D,
     input [31:0] RD2D,
     input [31:0] PCD,
-    input [31:0] RdD,
+    input [4:0]  RdD,
     input [31:0] ImmExtD,
     input [31:0] PCPlus4D,
 
@@ -31,9 +31,9 @@ module reg_ID_EX(
     output [31:0] RD1E,
     output [31:0] RD2E,
     output [31:0] PCE,
-    output [31:0] RdE,
+    output [4:0]  RdE,
     output [31:0] ImmExtE,
-    output [31:0] PCPlus4E,
+    output [31:0] PCPlus4E
 );
 
     reg        RegWrite;
@@ -47,7 +47,7 @@ module reg_ID_EX(
     reg [31:0] RD1;
     reg [31:0] RD2;
     reg [31:0] PC;
-    reg [31:0] Rd;
+    reg [4:0]  Rd;
     reg [31:0] ImmExt;
     reg [31:0] PCPlus4;
 

@@ -2,12 +2,13 @@ module reg_IF_ID(
     input         clock,
     input         reset,
     input         enable,
+    
     input  [31:0] InstrF,
     input  [31:0] PCF,
     input  [31:0] PCPlus4F,
 
     output [31:0] InstrD,
-    output [31:0] PCD
+    output [31:0] PCD,
     output [31:0] PCPlus4D
 );
 
