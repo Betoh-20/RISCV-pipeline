@@ -4,7 +4,7 @@ module hazard_unit(
     input [4:0] RdM,
     input [4:0] RdW,
     input [4:0] Rs1E,
-    input [4:0] Rs2E;
+    input [4:0] Rs2E,
     output [1:0] FowardAE,
     output [1:0] FowardBE
     );
