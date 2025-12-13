@@ -5,6 +5,7 @@ controller.v
 datapath.v
 dmem.v
 extend.v
+hazard_unit.v
 flopr.v
 imem.v
 maindec.v
