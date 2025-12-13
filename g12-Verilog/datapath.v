@@ -1,36 +1,36 @@
 module datapath(
-    input         clk, reset;
+    input         clk, reset,
     
     //from UC
-    input         RegWriteD;
-    input  [1:0]  ResultSrcD;
-    input         MemWriteD;
-    input         JumpD;
-    input         BranchD;
-    input  [2:0]  ALUControlD;
-    input         ALUSrcD;
-    input  [1:0]  ImmSrcD;
+    input         RegWriteD,
+    input  [1:0]  ResultSrcD,
+    input         MemWriteD,
+    input         JumpD,
+    input         BranchD,
+    input  [2:0]  ALUControlD,
+    input         ALUSrcD,
+    input  [1:0]  ImmSrcD,
     
     //from PC Logic @EX stage
-    input         PCSrcE; 
+    input         PCSrcE,
     
     //from IM
-    input  [31:0] InstrF;
+    input  [31:0] InstrF,
     
     //from DM
-    input  [31:0] ReadDataM;  
+    input  [31:0] ReadDataM,  
 
     //to PC Logic @EX stage  
-    output        ZeroE;
+    output        ZeroE,
     
     //to IM
-    output [31:0] PCF;
+    output [31:0] PCF,
     
     //to UC
-    output [31:0] InstrD;
+    output [31:0] InstrD,
     
     //to DM
-    output [31:0] ALUResultM, WriteDataM;
+    output [31:0] ALUResultM, WriteData
 );
 
 
@@ -166,7 +166,6 @@ module datapath(
         .BranchE(w_BranchE),
         .ALUControlE(w_ALUControlE),
         .ALUSrcE(w_ALUSrcE),
-        .ImmSrcE(w_ImmSrcE),
         .RD1E(w_RD1E),
         .RD2E(w_RD2E),
         .PCE(w_PCE),
@@ -210,17 +209,16 @@ module datapath(
     .zero(ZeroE)
   );
 
-    wire  [31:0] w_ALUResultE,
-    wire  [31:0] w_WriteDataE,
-    wire  [4:0]  w_RdE,
+    wire  [31:0] w_ALUResultE;
+    wire  [31:0] w_WriteDataE;
     
-    wire        w_RegWriteM,
-    wire [1:0]  w_ResultSrcM,
-    wire        w_MemWriteM,
-    wire [31:0] w_ALUResultM,
-    wire [31:0] w_WriteDataM,
-    wire [4:0]  w_RdM,
-    wire [31:0] w_PCPlus4M
+    wire        w_RegWriteM;
+    wire [1:0]  w_ResultSrcM;
+    wire        w_MemWriteM;
+    wire [31:0] w_ALUResultM;
+    wire [31:0] w_WriteDataM;
+    wire [4:0]  w_RdM;
+    wire [31:0] w_PCPlus4M;
 
     reg_EX_MEM reg_EX_MEM (
         .RegWriteE(w_RegWriteE),
@@ -239,15 +237,15 @@ module datapath(
         .PCPlus4M(w_PCPlus4M)
     );
 
-    wire  [31:0] w_ReadDataM,
+    wire  [31:0] w_ReadDataM;
 
-    wire        w_RegWriteW,
-    wire [1:0]  w_ResultSrcW,
-    wire [31:0] w_ALUResultW,
-    wire [31:0] w_ReadDataW,
-    wire [4:0]  w_RdW,
-    wire [31:0] w_PCPlus4W,
-    wire [31:0] w_ResultW,
+    wire        w_RegWriteW;
+    wire [1:0]  w_ResultSrcW;
+    wire [31:0] w_ALUResultW;
+    wire [31:0] w_ReadDataW;
+    wire [4:0]  w_RdW;
+    wire [31:0] w_PCPlus4W;
+    wire [31:0] w_ResultW;
 
     reg_MEM_WB reg_MEM_WB (
         .RegWriteM(w_RegWriteM),
