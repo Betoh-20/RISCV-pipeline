@@ -1,3 +1,5 @@
+// Won't work, designed for single-cycle, pipe-less version
+
 module riscvsingle(
     input  wire        clk,
     input  wire        reset,
