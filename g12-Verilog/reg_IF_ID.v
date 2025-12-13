@@ -1,40 +1,34 @@
 module reg_IF_ID(
     input         clock,
     input         reset,
-    input         enable,
+    input         enable,   // stall
+    input         flush,    // branch/jump
     
     input  [31:0] InstrF,
     input  [31:0] PCF,
     input  [31:0] PCPlus4F,
 
-    output [31:0] InstrD,
-    output [31:0] PCD,
-    output [31:0] PCPlus4D
+    output reg [31:0] InstrD,
+    output reg [31:0] PCD,
+    output reg [31:0] PCPlus4D
 );
 
-    reg [31:0] Instr;
-    reg [31:0] PC;
-    reg [31:0] PCPlus4;
-
-    initial begin
-        Instr <= 0;
-        PC <= 0;
-        PCPlus4 <= 0;
-    end
-
     always @(posedge clock or posedge reset) begin
-        if (reset)
-            Instr <= 0;
-            PC <= 0;
-            PCPlus4 <= 0;
-        else if (enable)
-            Instr <= InstrF;
-            PC <= PCF;
-            PCPlus4 <= PCPlus4F;
+        if (reset) begin
+            InstrD    <= 32'b0;
+            PCD       <= 32'b0;
+            PCPlus4D  <= 32'b0;
+        end
+        else if (flush) begin
+            InstrD    <= 32'b0;
+            PCD       <= 32'b0;
+            PCPlus4D  <= 32'b0;
+        end
+        else if (enable) begin
+            InstrD    <= InstrF;
+            PCD       <= PCF;
+            PCPlus4D  <= PCPlus4F;
+        end
     end
-
-    assign InstrD = Instr;
-    assign PCD = PC;
-    assign PCPlus4D = PCPlus4;
 
 endmodule
