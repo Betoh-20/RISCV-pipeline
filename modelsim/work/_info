@@ -1,0 +1,498 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vadder
+Z0 !s110 1765753822
+!i10b 1
+!s100 JMT0F0Fo2S9OJm7O?MUcO1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IB2X:aO9?A><3V5ni=;kOU2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Enzo/Documents/OAC/RISCV-pipeline/modelsim
+Z4 w1765550352
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v
+!i122 458
+L0 1 5
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1765753822.000000
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+valu
+R0
+!i10b 1
+!s100 Y>26c5CcSL5eX;m[P=H^A2
+R1
+IcPj^1h<kDMK9VWWFOSVOH3
+R2
+R3
+w1765746565
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v
+!i122 459
+L0 1 36
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v|
+!i113 1
+R7
+R8
+valudec
+R0
+!i10b 1
+!s100 EL5VbJKoShm<McK9JZ]UL0
+R1
+IFjZ>E5YJC9M?57CbmUm562
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v
+!i122 460
+L0 1 32
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v|
+!i113 1
+R7
+R8
+vcontroller
+Z9 !s110 1765753823
+!i10b 1
+!s100 Ud]?2InloB?6ecmWNCj@R0
+R1
+I<YULI?mI?5BB5=j[eej;o0
+R2
+R3
+w1765746728
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v
+!i122 461
+Z10 L0 1 38
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v|
+!i113 1
+R7
+R8
+vdatapath
+R9
+!i10b 1
+!s100 8<=bX@gDz?f:FKSCTz3`g1
+R1
+I7j@3NOFmf>iEZE:1Zl]052
+R2
+R3
+w1765753684
+8C:\Users\Enzo\Documents\OAC\RISCV-pipeline\g12-Verilog\datapath.v
+FC:\Users\Enzo\Documents\OAC\RISCV-pipeline\g12-Verilog\datapath.v
+!i122 462
+L0 1 343
+R5
+r1
+!s85 0
+31
+Z11 !s108 1765753823.000000
+!s107 C:\Users\Enzo\Documents\OAC\RISCV-pipeline\g12-Verilog\datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Enzo\Documents\OAC\RISCV-pipeline\g12-Verilog\datapath.v|
+!i113 1
+R7
+R8
+vdmem
+R9
+!i10b 1
+!s100 A=BSgc7doUGKK5@8<OM;o0
+R1
+If;47=kBHOWQcgR49G^@CY1
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v
+!i122 463
+L0 1 11
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v|
+!i113 1
+R7
+R8
+vextend
+R9
+!i10b 1
+!s100 LOd`Mb?IYCX0]ZYZO_P0g3
+R1
+IVEYGH8A`^LdgQe]dGJLb^0
+R2
+R3
+w1765746368
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v
+!i122 464
+L0 1 14
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v|
+!i113 1
+R7
+R8
+vflopr
+R9
+!i10b 1
+!s100 ;05^D0m?Zg:W[N[kWe@cc2
+R1
+IO^bDF^[MJkW80nQg2:]JY3
+R2
+R3
+Z12 w1765746044
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v
+!i122 465
+L0 1 12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v|
+!i113 1
+R7
+R8
+vhazard_unit
+R9
+!i10b 1
+!s100 ZQ=5n`_>E6EhXUa0TZMX@2
+R1
+INH`hfYjihlFA@WEbJ;b3o3
+R2
+R3
+R12
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v
+!i122 466
+L0 1 41
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v|
+!i113 1
+R7
+R8
+vimem
+R9
+!i10b 1
+!s100 Aeg>Hon;QfMH`<J2z;RgJ0
+R1
+IXM<lgMYlNUQQ;T<7OoGeQ0
+R2
+R3
+w1765747295
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v
+!i122 467
+L0 13 34
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v|
+!i113 1
+R7
+R8
+vmaindec
+R9
+!i10b 1
+!s100 3mT<g_KRm5O:Md_CHHTNH3
+R1
+IJO?jQmYn8kGILKkMb[:;42
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v
+!i122 468
+L0 1 31
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v|
+!i113 1
+R7
+R8
+vmux2
+Z13 !s110 1765753824
+!i10b 1
+!s100 1Q8oG0j<OZk19R<CLX<nS1
+R1
+IYdR_5X<^VlBIMI5MH`@4n0
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v
+!i122 469
+Z14 L0 1 7
+R5
+r1
+!s85 0
+31
+Z15 !s108 1765753824.000000
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v|
+!i113 1
+R7
+R8
+vmux3
+R13
+!i10b 1
+!s100 mS:8U30RFIXGW^kV^HMm<2
+R1
+Ik[O=V<@]W3C_DckmhQDLl0
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v
+!i122 470
+R14
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v|
+!i113 1
+R7
+R8
+vreg_EX_MEM
+R13
+!i10b 1
+!s100 I7OThFl=fW`;n[3Sg78n`0
+R1
+I8iZmA0<4geZ7Oj5T30eTg3
+R2
+R3
+w1765753125
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v
+!i122 471
+L0 1 55
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v|
+!i113 1
+R7
+R8
+nreg_@e@x_@m@e@m
+vreg_ID_EX
+R13
+!i10b 1
+!s100 VC15aL5=TIz`dXSDVFi;A3
+R1
+IG7S9;9[=nFaE7>DjcF34]2
+R2
+R3
+w1765753041
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v
+!i122 472
+L0 1 91
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v|
+!i113 1
+R7
+R8
+nreg_@i@d_@e@x
+vreg_IF_ID
+R13
+!i10b 1
+!s100 9Romc7PcQ_ZJEQJ5bYo^U1
+R1
+IVlCnG02gPFAc;[2jDlSI92
+R2
+R3
+Z16 w1765745703
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v
+!i122 473
+L0 1 34
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v|
+!i113 1
+R7
+R8
+nreg_@i@f_@i@d
+vreg_MEM_WB
+R13
+!i10b 1
+!s100 Qhn6NN[3Kmi=PmTeBo5eL1
+R1
+IHCH31KU>cCNBGfKecMSbW2
+R2
+R3
+R16
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v
+!i122 474
+L0 1 47
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v|
+!i113 1
+R7
+R8
+nreg_@m@e@m_@w@b
+vregfile
+R13
+!i10b 1
+!s100 JTjKXiKNHJX8CbzS<K2Yb0
+R1
+I0>;z]nXlf;IdC8G=Rgh[F1
+R2
+R3
+w1765752088
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v
+!i122 475
+L0 1 21
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v|
+!i113 1
+R7
+R8
+vriscvsingle
+Z17 !s110 1765753825
+!i10b 1
+!s100 5X5YzVikROH9`[d8CEM^h2
+R1
+IP7k:H;B^4RJnJ0<LW=UC_1
+R2
+R3
+w1765746724
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v
+!i122 476
+L0 3 115
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v|
+!i113 1
+R7
+R8
+vtestbench
+R17
+!i10b 1
+!s100 R4ZSJiKDOAZOh>o2eLGF=3
+R1
+Ika>?lQQoP=mX51KJVG<D83
+R2
+R3
+w1765753815
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v
+!i122 477
+L0 1 42
+R5
+r1
+!s85 0
+31
+Z18 !s108 1765753825.000000
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v|
+!i113 1
+R7
+R8
+vtop
+R17
+!i10b 1
+!s100 D2<^eBW>JEI6MY:iOR8G^3
+R1
+IKM^2LC^P2SKQ4<d@IJ]Vn1
+R2
+R3
+R4
+8C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v
+FC:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v
+!i122 478
+R10
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v|
+!i113 1
+R7
+R8

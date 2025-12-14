@@ -1,0 +1,1304 @@
+# Compile of adder.v was successful.
+# Compile of alu.v failed with 1 errors.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 46 errors.
+# Compile of dmem.v was successful.
+# Compile of extend.v failed with 1 errors.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 3 failed with 48 errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 1 errors.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 18:13:42 on Dec 14,2025
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/testbench/dut/clk \
+sim:/testbench/dut/reset \
+sim:/testbench/dut/WriteData \
+sim:/testbench/dut/DataAdr \
+sim:/testbench/dut/MemWrite \
+sim:/testbench/dut/PC \
+sim:/testbench/dut/Instr \
+sim:/testbench/dut/ReadData
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "riscvtest.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v(8)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem
+# Break key hit
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 26
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Break in Module regfile at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v line 15
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "./riscvtest.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v(8)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem
+# Break key hit
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 26
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "./riscvtest.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v(8)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem
+# Break key hit
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 26
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Break in Module reg_ID_EX at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v line 54
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 30
+add wave -position insertpoint  \
+sim:/testbench/dut/imem/a \
+sim:/testbench/dut/imem/rd \
+sim:/testbench/dut/imem/RAM
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Break in Module reg_ID_EX at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v line 54
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/pcreg/clk \
+sim:/testbench/dut/rvsingle/dp/pcreg/reset \
+sim:/testbench/dut/rvsingle/dp/pcreg/enable \
+sim:/testbench/dut/rvsingle/dp/pcreg/d \
+sim:/testbench/dut/rvsingle/dp/pcreg/q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Break in Module flopr at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v line 8
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/rf/rf
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/reg_EX_MEM/ResultSrcE
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Break in Module flopr at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v line 8
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/clock \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/reset \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/enable \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/flush \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/InstrF \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/PCF \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/PCPlus4F \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/InstrD \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/PCD \
+sim:/testbench/dut/rvsingle/dp/reg_IF_ID/PCPlus4D
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/enable \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/flush \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RegWriteD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ResultSrcD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/MemWriteD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/JumpD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/BranchD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ALUControlD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ALUSrcD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RD1D \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RD2D \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/PCD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ImmExtD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/PCPlus4D \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RdD \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/Rs1D \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/Rs2D \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RegWriteE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ResultSrcE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/MemWriteE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/JumpE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/BranchE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ALUControlE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ALUSrcE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RD1E \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RD2E \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/PCE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/ImmExtE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/PCPlus4E \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/RdE \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/Rs1E \
+sim:/testbench/dut/rvsingle/dp/reg_ID_EX/Rs2E
+run -all
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/c/op \
+sim:/testbench/dut/rvsingle/c/funct3 \
+sim:/testbench/dut/rvsingle/c/funct7b5 \
+sim:/testbench/dut/rvsingle/c/RegWriteD \
+sim:/testbench/dut/rvsingle/c/ResultSrcD \
+sim:/testbench/dut/rvsingle/c/MemWriteD \
+sim:/testbench/dut/rvsingle/c/JumpD \
+sim:/testbench/dut/rvsingle/c/BranchD \
+sim:/testbench/dut/rvsingle/c/ALUControlD \
+sim:/testbench/dut/rvsingle/c/ALUSrcD \
+sim:/testbench/dut/rvsingle/c/ImmSrcD \
+sim:/testbench/dut/rvsingle/c/ALUOp \
+sim:/testbench/dut/rvsingle/c/Branch
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/hu/PCSrcE \
+sim:/testbench/dut/rvsingle/hu/ResultSrcE \
+sim:/testbench/dut/rvsingle/hu/RegWriteM \
+sim:/testbench/dut/rvsingle/hu/RegWriteW \
+sim:/testbench/dut/rvsingle/hu/RdE \
+sim:/testbench/dut/rvsingle/hu/RdM \
+sim:/testbench/dut/rvsingle/hu/RdW \
+sim:/testbench/dut/rvsingle/hu/Rs1D \
+sim:/testbench/dut/rvsingle/hu/Rs2D \
+sim:/testbench/dut/rvsingle/hu/Rs1E \
+sim:/testbench/dut/rvsingle/hu/Rs2E \
+sim:/testbench/dut/rvsingle/hu/FowardAE \
+sim:/testbench/dut/rvsingle/hu/FowardBE \
+sim:/testbench/dut/rvsingle/hu/StallF \
+sim:/testbench/dut/rvsingle/hu/StallD \
+sim:/testbench/dut/rvsingle/hu/FlushD \
+sim:/testbench/dut/rvsingle/hu/FlushE \
+sim:/testbench/dut/rvsingle/hu/lwStall
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+run -all
+# Break key hit
+# Break in Module flopr at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v line 8
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_EX_MEM'.  Expected 18, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_EX_MEM File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 269
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(269): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_MEM_WB'.  Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/reg_MEM_WB File: C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v Line: 287
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'enable'.
+# ** Warning: (vsim-3722) C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v(287): [TFMPC] - Missing connection for port 'flush'.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Simulation stop requested.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/enable_pcreg \
+sim:/testbench/dut/rvsingle/dp/enable_reg_IF_ID
+restart -f
+run -all
+# Break key hit
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 26
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Break key hit
+# Simulation stop requested.
+restart -f
+run -all
+# Break key hit
+# Break in Module reg_ID_EX at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v line 54
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+# Compile of datapath.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.datapath
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Break key hit
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 255 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Break key hit
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/dp/rf/we3 \
+sim:/testbench/dut/rvsingle/dp/rf/a1 \
+sim:/testbench/dut/rvsingle/dp/rf/a2 \
+sim:/testbench/dut/rvsingle/dp/rf/a3 \
+sim:/testbench/dut/rvsingle/dp/rf/wd3 \
+sim:/testbench/dut/rvsingle/dp/rf/rd1 \
+sim:/testbench/dut/rvsingle/dp/rf/rd2 \
+sim:/testbench/dut/rvsingle/dp/rf/rf
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Break key hit
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+add wave -position insertpoint sim:/testbench/dut/rvsingle/dp/reg_EX_MEM/*
+add wave -position insertpoint sim:/testbench/dut/rvsingle/dp/reg_MEM_WB/*
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+add wave -position insertpoint sim:/testbench/dut/rvsingle/dp/alu/*
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+add wave -position insertpoint sim:/testbench/dut/rvsingle/dp/srcaEmux/*
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 185 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 255 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 255 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Enzo/Documents/OAC/RISCV-pipeline/modelsim/wave.do
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 265 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+add wave -position insertpoint sim:/testbench/dut/dmem/*
+add wave -position insertpoint  \
+sim:/testbench/dut/dmem/RAM
+restart -f
+run -all
+# Simulation failed
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(37)
+#    Time: 265 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 37
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 2 errors.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 1 failed with 2 errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation succeeded
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(34)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 34
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation succeeded
+# Break key hit
+# Break in Module extend at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v line 5
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of aludec.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dmem.v was successful.
+# Compile of extend.v was successful.
+# Compile of flopr.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of imem.v was successful.
+# Compile of maindec.v was successful.
+# Compile of mux2.v was successful.
+# Compile of mux3.v was successful.
+# Compile of reg_EX_MEM.v was successful.
+# Compile of reg_ID_EX.v was successful.
+# Compile of reg_IF_ID.v was successful.
+# Compile of reg_MEM_WB.v was successful.
+# Compile of regfile.v was successful.
+# Compile of riscvsingle.v was successful.
+# Compile of testbench.v was successful.
+# Compile of top.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_IF_ID
+# Loading work.regfile
+# Loading work.extend
+# Loading work.reg_ID_EX
+# Loading work.mux3
+# Loading work.alu
+# Loading work.reg_EX_MEM
+# Loading work.reg_MEM_WB
+# Loading work.hazard_unit
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation succeeded
+# ** Note: $stop    : C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v(34)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/testbench.v line 34

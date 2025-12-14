@@ -2,7 +2,7 @@ module reg_ID_EX(
     input         clock,
     input         reset,
     input         enable,   // stall
-    input         flush,    // bubble
+    input         flush,
 
     // WB
     input         RegWriteD,
@@ -52,7 +52,7 @@ module reg_ID_EX(
 );
 
     always @(posedge clock or posedge reset) begin
-        if (reset || flush) begin
+        if (reset == 1'b1 || flush == 1'b1) begin
             RegWriteE   <= 0;
             ResultSrcE  <= 0;
             MemWriteE   <= 0;
@@ -69,7 +69,7 @@ module reg_ID_EX(
             Rs1E        <= 0;
             Rs2E        <= 0;
         end
-        else if (enable) begin
+        else if (enable == 1'b1) begin
             RegWriteE   <= RegWriteD;
             ResultSrcE  <= ResultSrcD;
             MemWriteE   <= MemWriteD;

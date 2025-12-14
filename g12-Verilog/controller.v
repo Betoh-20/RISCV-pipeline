@@ -2,7 +2,6 @@ module controller(
     input  wire [6:0] op,
     input  wire [2:0] funct3,
     input  wire       funct7b5,
-    input  wire       Zero,
     output wire       RegWriteD,
     output wire [1:0] ResultSrcD,
     output wire       MemWriteD,
@@ -35,7 +34,5 @@ module controller(
       .ALUOp(ALUOp),
       .ALUControl(ALUControlD)
   );
-
-//   assign PCSrc = (Branch & Zero) | Jump;
 
 endmodule

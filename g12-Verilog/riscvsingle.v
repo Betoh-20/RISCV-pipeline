@@ -13,7 +13,6 @@ module riscvsingle(
 
   // connecting Controller to Datapath
   wire [31:0] w_InstrD;
-  wire        w_Zero;        // <-- I have no idea what this is for, it's not in the reference
   wire        w_RegWriteD;
   wire [1:0]  w_ResultSrcD;
   wire        w_MemWriteD;
@@ -48,7 +47,6 @@ module riscvsingle(
     .op(w_InstrD[6:0]),
     .funct3(w_InstrD[14:12]),
     .funct7b5(w_InstrD[30]),
-    .Zero(w_Zero),
     .RegWriteD(w_RegWriteD),
     .ResultSrcD(w_ResultSrcD),
     .MemWriteD(w_MemWriteD),
