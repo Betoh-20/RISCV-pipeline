@@ -10,12 +10,12 @@ module hazard_unit(
     input [4:0] Rs2D,
     input [4:0] Rs1E,
     input [4:0] Rs2E,
+    output [1:0] FowardAE,
+    output [1:0] FowardBE,
     output StallF,
     output StallD,
     output FlushD,
-    output FlushE,
-    output [1:0] FowardAE,
-    output [1:0] FowardBE
+    output FlushE
     );
 
     wire lwStall;
