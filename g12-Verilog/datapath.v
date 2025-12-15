@@ -11,17 +11,19 @@ module datapath(
     input         ALUSrcD,
     input  [1:0]  ImmSrcD,
     
-    //from PC Logic @EX stage
-    input         PCSrcE,
-    
     //from IM
     input  [31:0] InstrF,
     
     //from DM
     input  [31:0] ReadDataM,  
 
-    //to PC Logic @EX stage  
-    output        ZeroE,
+    //from Hazard Unit
+    input [1:0] FowardAE,
+    input [1:0] FowardBE,
+    input       StallF,
+    input       StallD,
+    input       FlushD,
+    input       FlushE,
     
     //to IM
     output [31:0] PCF,
@@ -30,13 +32,91 @@ module datapath(
     output [31:0] InstrD,
     
     //to DM
-    output [31:0] ALUResultM, WriteData
+    output [31:0] ALUResultM, WriteDataM,
+    output        MemWriteM,
+
+    //to Hazard Unit
+    output PCSrcE,
+    output ResultSrcE,
+    output RegWriteM,
+    output RegWriteW,
+    output [4:0] RdM,
+    output [4:0] RdW,
+    output [4:0] Rs1D,
+    output [4:0] Rs2D,
+    output [4:0] Rs1E,
+    output [4:0] Rs2E,
+    output [4:0] RdE
 );
 
+    wire        w_PCSrcE;
 
-  wire [31:0] PCNext, PCPlus4, PCTarget;
-  wire [31:0] SrcAE, SrcBE;
+    wire [31:0] PCNext, PCPlus4, PCTarget;
+    wire [31:0] SrcAE, SrcBE;
+    wire [31:0] w_InstrD;
+    wire [31:0] w_PCD;
+    wire [31:0] w_PCPlus4D;
+    wire        w_RegWriteD;
+    wire [1:0]  w_ResultSrcD;
+    wire        w_MemWriteD;
+    wire        w_JumpD;
+    wire        w_BranchD;
+    wire [2:0]  w_ALUControlD;
+    wire        w_ALUSrcD;
+    wire [1:0]  w_ImmSrcD;
 
+    wire [31:0] w_RD1D;
+    wire [31:0] w_RD2D;
+    wire [4:0]  w_Rs1D;
+    wire [4:0]  w_Rs2D;
+    wire [4:0]  w_RdD;
+    wire [31:0] w_ImmExtD;
+
+
+    wire        w_RegWriteE;
+    wire [1:0]  w_ResultSrcE;
+    wire        w_MemWriteE;
+    wire        w_JumpE;
+    wire        w_BranchE;
+    wire [2:0]  w_ALUControlE;
+    wire        w_ALUSrcE;
+    wire [31:0] w_RD1E;
+    wire [31:0] w_RD2E;
+    wire [31:0] w_PCE;
+    wire [31:0] w_ImmExtE;
+    wire [31:0] w_PCPlus4E;
+    wire [4:0]  w_RdE;
+    wire [4:0]  w_Rs1E;
+    wire [4:0]  w_Rs2E;
+    wire  [31:0] w_ALUResultE;
+    wire  [31:0] w_WriteDataE;
+
+    wire        w_RegWriteM;
+    wire [1:0]  w_ResultSrcM;
+    wire        w_MemWriteM;
+    wire [31:0] w_ALUResultM;
+    wire [31:0] w_WriteDataM;
+    wire [4:0]  w_RdM;
+    wire [31:0] w_PCPlus4M;
+    wire  [31:0] w_ReadDataM;
+
+    wire        w_RegWriteW;
+    wire [1:0]  w_ResultSrcW;
+    wire [31:0] w_ALUResultW;
+    wire [31:0] w_ReadDataW;
+    wire [4:0]  w_RdW;
+    wire [31:0] w_PCPlus4W;
+    wire [31:0] w_ResultW;
+    wire        w_ZeroE;
+    wire        w_FlushE;
+    wire        w_FlushD;
+    
+    wire enable_pcreg;
+    wire enable_reg_IF_ID;
+
+    assign w_FlushD = (FlushD === 1'b1) ? 1'b1 : 1'b0;
+    assign w_FlushE = (FlushE === 1'b1) ? 1'b1 : 1'b0;
+    assign w_PCSrcE = (w_JumpE === 1'b1) || ((w_BranchE === 1'b1) && (w_ZeroE === 1'b1));
     assign w_RegWriteD = RegWriteD;
     assign w_ResultSrcD = ResultSrcD;
     assign w_MemWriteD = MemWriteD;
@@ -46,16 +126,39 @@ module datapath(
     assign w_ALUSrcD = ALUSrcD;
     assign w_ImmSrcD = ImmSrcD;
 
-    assign ReadDataM = w_ReadDataM;
+    assign w_ReadDataM = ReadDataM;
 
     assign InstrD = w_InstrD;
     assign ALUResultM = w_ALUResultM;
     assign WriteDataM = w_WriteDataM;
+    assign MemWriteM = w_MemWriteM;
+
+    assign PCSrcE = w_PCSrcE;
+    assign ResultSrcE = w_ResultSrcE[0];
+    assign RegWriteM = w_RegWriteM;
+    assign RegWriteW = w_RegWriteW;
+    assign Rs1E = w_Rs1E;
+    assign Rs2E = w_Rs2E;
+    assign RdM = w_RdM;
+    assign RdW = w_RdW;
+    assign Rs1D = w_Rs1D;
+    assign Rs2D = w_Rs2D;
+    assign RdE = w_RdE;
+
+
+
+    assign w_RdD = w_InstrD[11:7];
+    assign enable_pcreg = (StallF === 1'b1) ? 1'b0 : 1'b1;
+    assign enable_reg_IF_ID = (StallD === 1'b1) ? 1'b0 : 1'b1;
+
+    assign w_Rs1D = w_InstrD[19:15];
+    assign w_Rs2D = w_InstrD[24:20];
 
   // next PC logic
   flopr #(32) pcreg (
     .clk(clk), 
     .reset(reset), 
+    .enable(enable_pcreg),
     .d(PCNext), 
     .q(PCF)
   );
@@ -82,7 +185,8 @@ module datapath(
   reg_IF_ID reg_IF_ID (
     .clock(clk),
     .reset(reset),
-    .enable(1'b1),
+    .enable(enable_reg_IF_ID),
+    .flush(w_FlushD),
     .InstrF(InstrF),
     .PCF(PCF),
     .PCPlus4F(PCPlus4),
@@ -91,21 +195,19 @@ module datapath(
     .PCPlus4D(w_PCPlus4D)
   );
 
-  wire [31:0] w_InstrD;
-  wire [31:0] w_PCD;
-  wire [31:0] w_PCPlus4D;
 
   // register file logic
   regfile rf (
     .clk(clk), 
-    .we3(RegWrite),
+    .we3(w_RegWriteW),
     .a1(w_InstrD[19:15]), //rs1
     .a2(w_InstrD[24:20]), //rs2
-    .a3(w_InstrD[11:7]),  //rd
+    .a3(w_RdW),  //rd
     .wd3(w_ResultW),      //write data
     .rd1(w_RD1D),       
     .rd2(w_RD2D)
   );
+
 
   extend ext (
     .instr(w_InstrD[31:7]), 
@@ -113,39 +215,13 @@ module datapath(
     .immext(w_ImmExtD)
   );
 
-    wire        w_RegWriteD;
-    wire [1:0]  w_ResultSrcD;
-    wire        w_MemWriteD;
-    wire        w_JumpD;
-    wire        w_BranchD;
-    wire [2:0]  w_ALUControlD;
-    wire        w_ALUSrcD;
-    wire [1:0]  w_ImmSrcD;
 
-    wire [31:0] w_RD1D;
-    wire [31:0] w_RD2D;
-    wire [4:0]  w_RdD;
-    wire [31:0] w_ImmExtD;
-
-
-    wire        w_RegWriteE;
-    wire [1:0]  w_ResultSrcE;
-    wire        w_MemWriteE;
-    wire        w_JumpE;
-    wire        w_BranchE;
-    wire [2:0]  w_ALUControlE;
-    wire        w_ALUSrcE;
-    wire [31:0] w_RD1E;
-    wire [31:0] w_RD2E;
-    wire [31:0] w_PCE;
-    wire [4:0]  w_RdE;
-    wire [31:0] w_ImmExtE;
-    wire [31:0] w_PCPlus4E;
 
     reg_ID_EX reg_ID_EX (
         .clock(clk),
         .reset(reset),
         .enable(1'b1),
+        .flush(w_FlushE),
         .RegWriteD(w_RegWriteD),
         .ResultSrcD(w_ResultSrcD),
         .MemWriteD(w_MemWriteD),
@@ -156,9 +232,11 @@ module datapath(
         .RD1D(w_RD1D),
         .RD2D(w_RD2D),
         .PCD(w_PCD),
-        .RdD(w_RdD),
         .ImmExtD(w_ImmExtD),
         .PCPlus4D(w_PCPlus4D),
+        .RdD(w_RdD),
+        .Rs1D(w_Rs1D),
+        .Rs2D(w_Rs2D),
         .RegWriteE(w_RegWriteE),
         .ResultSrcE(w_ResultSrcE),
         .MemWriteE(w_MemWriteE),
@@ -169,17 +247,18 @@ module datapath(
         .RD1E(w_RD1E),
         .RD2E(w_RD2E),
         .PCE(w_PCE),
-        .RdE(w_RdE),
         .ImmExtE(w_ImmExtE),
-        .PCPlus4E(w_PCPlus4E)
-
+        .PCPlus4E(w_PCPlus4E),
+        .RdE(w_RdE),
+        .Rs1E(w_Rs1E),
+        .Rs2E(w_Rs2E)
     );
 
     mux3 #(32) writeDataEmux (
        .d0(w_RD2E), 
        .d1(w_ResultW), 
        .d2(w_ALUResultM), 
-       .s(), 
+       .s(FowardBE), 
        .y(w_WriteDataE)
     );
     
@@ -187,7 +266,7 @@ module datapath(
         .d0(w_RD1E), 
         .d1(w_ResultW), 
         .d2(w_ALUResultM), 
-        .s(), 
+        .s(FowardAE), 
         .y(SrcAE)
     );
 
@@ -206,21 +285,15 @@ module datapath(
     .b(SrcBE), 
     .alucontrol(w_ALUControlE), 
     .result(w_ALUResultE), 
-    .zero(ZeroE)
+    .zero(w_ZeroE)
   );
 
-    wire  [31:0] w_ALUResultE;
-    wire  [31:0] w_WriteDataE;
-    
-    wire        w_RegWriteM;
-    wire [1:0]  w_ResultSrcM;
-    wire        w_MemWriteM;
-    wire [31:0] w_ALUResultM;
-    wire [31:0] w_WriteDataM;
-    wire [4:0]  w_RdM;
-    wire [31:0] w_PCPlus4M;
 
     reg_EX_MEM reg_EX_MEM (
+        .clock(clk),
+        .reset(reset),
+        .flush(1'b0),
+        .enable(1'b1),
         .RegWriteE(w_RegWriteE),
         .ResultSrcE(w_ResultSrcE),
         .MemWriteE(w_MemWriteE),
@@ -237,24 +310,18 @@ module datapath(
         .PCPlus4M(w_PCPlus4M)
     );
 
-    wire  [31:0] w_ReadDataM;
-
-    wire        w_RegWriteW;
-    wire [1:0]  w_ResultSrcW;
-    wire [31:0] w_ALUResultW;
-    wire [31:0] w_ReadDataW;
-    wire [4:0]  w_RdW;
-    wire [31:0] w_PCPlus4W;
-    wire [31:0] w_ResultW;
 
     reg_MEM_WB reg_MEM_WB (
+        .clock(clk),
+        .reset(reset),
+        .flush(1'b0),
+        .enable(1'b1),
         .RegWriteM(w_RegWriteM),
         .ResultSrcM(w_ResultSrcM),
         .ALUResultM(w_ALUResultM),
         .ReadDataM(w_ReadDataM),
         .RdM(w_RdM),
         .PCPlus4M(w_PCPlus4M),
-
         .RegWriteW(w_RegWriteW),
         .ResultSrcW(w_ResultSrcW),
         .ALUResultW(w_ALUResultW),

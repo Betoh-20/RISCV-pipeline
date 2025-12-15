@@ -12,7 +12,7 @@ module regfile(clk,
 
   reg [31:0] rf[0:31];
 
-  always @(posedge clk)
+  always @(negedge clk)
     if (we3) rf[a3] <= wd3;
 
   assign rd1 = (a1 != 0) ? rf[a1] : 32'b0;

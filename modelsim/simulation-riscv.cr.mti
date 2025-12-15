@@ -1,0 +1,141 @@
+C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/dmem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dmem
+
+Top level modules:
+	dmem
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_ID_EX.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_ID_EX
+
+Top level modules:
+	reg_ID_EX
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_IF_ID.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_IF_ID
+
+Top level modules:
+	reg_IF_ID
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/extend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module extend
+
+Top level modules:
+	extend
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/riscvsingle.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module riscvsingle
+
+Top level modules:
+	riscvsingle
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/maindec.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module maindec
+
+Top level modules:
+	maindec
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/flopr.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_MEM_WB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_MEM_WB
+
+Top level modules:
+	reg_MEM_WB
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/mux3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux3
+
+Top level modules:
+	mux3
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/regfile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/aludec.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module aludec
+
+Top level modules:
+	aludec
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/datapath.v {1 {vlog -work work -stats=none {C:\Users\Enzo\Documents\OAC\RISCV-pipeline\g12-Verilog\datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/reg_EX_MEM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_EX_MEM
+
+Top level modules:
+	reg_EX_MEM
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/imem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module imem
+
+Top level modules:
+	imem
+
+} {} {}} C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/OAC/RISCV-pipeline/g12-Verilog/hazard_unit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hazard_unit
+
+Top level modules:
+	hazard_unit
+
+} {} {}}

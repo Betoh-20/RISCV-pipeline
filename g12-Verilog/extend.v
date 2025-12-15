@@ -1,8 +1,6 @@
 module extend(input  [31:7] instr,
               input  [1:0]  immsrc,
-              output [31:0] immext);
-
-  reg [31:0] immext;
+              output reg [31:0] immext);
 
   always @(*) begin
     case (immsrc)

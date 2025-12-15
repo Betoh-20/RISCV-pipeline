@@ -1,7 +1,7 @@
 module reg_EX_MEM(
     input         clock,
     input         reset,
-    input         enable,
+    input         enable, 
     input         flush,
 
     // WB
@@ -32,7 +32,7 @@ module reg_EX_MEM(
 );
 
     always @(posedge clock or posedge reset) begin
-        if (reset || flush) begin
+        if (reset === 1'b1 || flush === 1'b1) begin
             RegWriteM   <= 0;
             ResultSrcM  <= 0;
             MemWriteM   <= 0;

@@ -1,12 +1,11 @@
 module alu(input  [31:0] a, b,
            input  [2:0]  alucontrol,
-           output [31:0] result,
+           output reg [31:0] result,
            output        zero);
 
   wire [31:0] condinvb, sum;
   wire        v;
   wire        isAddSub;
-  reg  [31:0] result;
 
   assign condinvb = alucontrol[0] ? ~b : b;
   assign sum = a + condinvb + alucontrol[0];
